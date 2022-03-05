@@ -11,3 +11,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: "Malgun";
+  src: local("Malgun"),
+   url("./Assets/Fonts/malgun.ttf") format("truetype");
+  /* font-weight: bold; */
+  }

@@ -1,0 +1,122 @@
+.body{
+    background: rgb(0,8,63);
+    background: linear-gradient(180deg, rgba(0,8,63,1) 0%, rgba(0,8,63,1) 50%, rgba(0,43,123,1) 100%);
+    min-height: 100%;
+    min-width: 100%;
+    position: absolute;
+  }
+
+
+/* side-bar */
+
+  .link{
+    text-decoration: none;
+    color: white;
+  }
+  
+  .link:hover{
+    color: white;
+    text-decoration: none;
+  }
+  
+  .logo-text{
+    margin-left: 0.70em;
+    margin-top: 1em;
+    font-family: 'Malgun';
+    font-weight: bold;
+    font-size: 2em;
+  }
+  
+  .menu-header{
+     color: white;
+     margin-left: 1.4em;
+     margin-top: 1.5em;
+     font-family: 'Malgun';
+     opacity: 63%;
+  }
+  
+  aside nav div ul {
+     color: white;
+     list-style-type: none;
+     font-family: 'Malgun';
+     font-size: 1.20em;
+     margin-left: -20px;
+  }
+  aside nav div ul li {
+    margin-top: 1em;
+    padding: 5px 5px 5px 10px;
+  }
+
+  aside nav div ul :hover{
+    color: white;
+    background-color: rgb(11, 86, 133);
+    border-radius: 10px;
+  }
+  .menu-icon{
+    color: white;
+    font-size: 35px;
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+
+  @media (min-width: 768px){
+    #menu{
+      display: block;
+    }
+  }
+
+/* side-bar */
+
+
+/* main */
+  
+
+.nav-link{
+  font-family: 'Malgun';
+     font-size: 1.20em;
+}
+
+
+.rounded-5{
+  border-radius: 20px;
+}
+  
+/* main */
+
+
+/* Announcements */
+
+.search-btn{
+  background-color: inherit;
+  border-radius: 12px;
+  color: white;
+  border-color: white;
+  font-family: 'Malgun';
+  height: 35px;
+}
+
+.side-headers{
+  margin-left: 1.15em;
+    margin-top: 1.5em;
+    font-family: 'Malgun';
+    font-weight: bold;
+    font-size: 1.25em;
+}
+
+.side-movie-card{
+  background-color: inherit;
+  height: 120px;
+}
+.image-side-movie-card{
+  height: 118px;
+}
+.card-text{
+  margin-bottom: 0rem
+}
+.image-imdb-side-movie-card{
+  height: 20px;
+  margin-left: -5px;
+}
+/* Announcements */
+
+  
