@@ -1,15 +1,14 @@
 import Cookies from "universal-cookie";
 
-
 export const CookiesManger = {
-  SetUserCookie: async (accessToken, refreshToken , email , timeByMinute) => {
+  SetUserCookie: async (accessToken, refreshToken, email, timeByMinute) => {
     const cookies = new Cookies();
     var date = new Date();
-    date.setTime(date.getTime() + (timeByMinute * 60 * 1000));
+    date.setTime(date.getTime() + timeByMinute * 60 * 1000);
 
-    cookies.set("accessToken", accessToken , {expires : date} );
-    cookies.set("refreshToken", refreshToken , {expires : date});
-    cookies.set("email", email , {expires : date});
+    cookies.set("accessToken", accessToken, { expires: date });
+    cookies.set("refreshToken", refreshToken, { expires: date });
+    cookies.set("email", email, { expires: date });
   },
   GetUserCookie: async () => {
     const cookies = new Cookies();
@@ -18,16 +17,18 @@ export const CookiesManger = {
     };
     return data;
   },
-  IsUserLoggedIn: async () => {
+  RemoveUserCookie: async () => {
+    const cookies = new Cookies();
+    await cookies.remove("accessToken");
+    await cookies.remove("refreshToken");
+    await cookies.remove("email");
+  },
+  GetTokens: async () => {
     const cookies = new Cookies();
     const data = {
-      accessToken: cookies.get("accessToken"),
+      token: cookies.get("accessToken"),
       refreshToken: cookies.get("refreshToken"),
-      email: cookies.get("email"),
     };
-    if(data.accessToken !== undefined ||data.refreshToken !== undefined ||data.email !== undefined){
-      return true;
-    }
-    return false;
+    return data;
   },
 };

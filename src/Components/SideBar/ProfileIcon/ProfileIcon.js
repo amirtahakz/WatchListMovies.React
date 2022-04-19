@@ -17,6 +17,11 @@ function ProfileIcon(params) {
     };
   }, []);
 
+  const signOutHandler = () => {
+    CookiesManger.RemoveUserCookie();
+    window.location.href = "/";
+  };
+
   if (user.email === undefined) {
     return (
       <div className="profile-icon text-light">
@@ -69,7 +74,7 @@ function ProfileIcon(params) {
           <hr className="dropdown-divider" />
         </li>
         <li>
-          <Link to="#" className="dropdown-item">
+          <Link to="#" onClick={signOutHandler} className="dropdown-item">
             Sign out
           </Link>
         </li>
