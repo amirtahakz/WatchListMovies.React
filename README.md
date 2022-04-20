@@ -17,7 +17,9 @@ In this project, the number of members was one
 
 3.Project output :
 
-This project met the needs of the customer in attracting fans of successful movies and series
+Maybe you want to create a video streaming site
+This project shows that I can meet your needs in this regard
+
 
 4.Below you can see some shots :
 
