@@ -1,4 +1,4 @@
-(MovieApp in React)
+(WatchListMovies.React)
 
 1.Project specifications :
 
